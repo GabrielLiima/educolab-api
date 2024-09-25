@@ -12,7 +12,11 @@ const studentSchema = mongoose.Schema({
   ForumID: {
     type: String,
     required: true,
-  }
+  },
+  codEnvioRecom: {
+    type: Number,
+    default: 0,
+  },
 });
 
 module.exports = mongoose.model("Student", studentSchema);

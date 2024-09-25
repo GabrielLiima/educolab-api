@@ -8,7 +8,7 @@ const confirmationRoutes = require("./routes/confirmation");
 const studentRoutes = require("./routes/student");
 const forumRoutes = require("./routes/forum");
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const MONGO_URI = process.env.MONGO_URI;
 
 const app = express();
