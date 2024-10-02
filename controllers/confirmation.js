@@ -49,7 +49,7 @@ exports.getConfirmRegistration = (req, res) => {
     }
 
     axios
-      .post("http://localhost:3000/confirm-registration", {
+      .post("https://educolab-api-hlvv.onrender.com/confirm-registration", {
         id: id,
       })
       .then((response) => {
@@ -72,7 +72,7 @@ exports.getConfirmParticipation = (req, res) => {
     }
 
     axios
-      .post("http://localhost:3000/confirm-participation", {
+      .post("https://educolab-api-hlvv.onrender.com/confirm-participation", {
         id: id,
       })
       .then((response) => {
